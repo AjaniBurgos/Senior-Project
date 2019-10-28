@@ -1,0 +1,288 @@
+<html>
+  <title> Developer's Log </title>
+  <link href="background.css" rel="stylesheet" type="text/css">
+  <style>
+    h4 {
+      color: white;
+      text-shadow: 2px 1px 2px #000000;
+    }
+    h3 {
+      color: white;
+      text-shadow: 2px 1px 2px #000000;
+    }
+  </style>
+  <body>
+
+  <div align="center">
+  <a href="pepeclub.html"><img src="images/pepeguitar2.png" height="120" width="200" title="oWo wuzz dis?"></a>
+  <a href="index.html"><img src="logoWeb.png" alt="Title" title="Guitar Auto Tuner"></a>
+  </div>
+
+  <div align="center">
+  <ul class="head">
+  <li class="head">
+  <table align="center" class="head" width="802" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-left-width: 2; border-right-width: 2; border-top-width: 2; border-bottom-style: solid; border-bottom-width: 1" bordercolor="#111111" width=1000 bgcolor="#C0C0C0" height="34">
+    <ul class="head" align="center">
+      <li class="head"><a href = "index.html"> Home </a></li>
+      <li class="head"><a href = "about.html"> About us </a></li>
+      <li class="head"><a href = "references.html">Cited References</a></li>
+      <li class="head"><a href = "log.html">Developer's Log</a></li>
+      <li class="head"><a href = "" onclick="window.open('guitarautotuner.zip')">Resources</a></li>
+    </ul>
+  </table>
+  </li>
+  </ul>
+  </div>
+
+  <!-- TO-DO LIST-->
+  <br><br><br><br><br><br><div align="center"><h3><u>TO-DO LIST:</u></h3></div>
+  <h4>
+  <ul>
+    <li><s>Create the mobile companion app</s></li>
+    <ul>
+      <li><s>Establish communication with the device via Bluetooth</s></li>
+      <li><s>Send frequency information from the device to the app & viseversa</s></li>
+      <li>Allow for customization of tuning configuration(?)</li>
+    </ul>
+    <li>Build a prototype</li>
+    <ul>
+      <li><s>Have the device recording frequencies</s></li>
+      <ul>
+        <li><s>Work in progress: recordings not as accurate as desired</s></li>
+      </ul>
+      <li><s>Have the device spin the motor bidirectionally</s></li>
+        <ul>
+          <li><s>Still need to fine-tune the logic necessary to have the motor spin based on the frequency</s></li>
+        </ul>
+    </ul>
+    <li>Update the prototype</li>
+    <ul>
+      <li>Allow for desired changes not addressed in the initial prototype</li>
+      <li>Contain the hardware in one consistent unit</li>
+      <li><s>Create a tuning knob-piece to attach to the motor</s>  </li>
+      <li><s>Begin testing with a guitar</s></li>
+    </ul>
+  </ul>
+
+  <!-- Actual Logging stuff -->
+  <div align="center"><h3><u>DEVELOPER'S LOG:</u></h3></div>
+  <b>Fall 2018: </b>
+  <ul>
+    <li>Created the initial design of the device's functionality:<br>
+    <img src="images/functional_design.png" alt="Functional design of the device itself"><br><br></li>
+    <li>Created the initial design of the device itself:<br>
+    <img src="images/general_layout.png" alt="General layout of the device"></li>
+    <li>Prototyping begins!</li>
+    <ul>
+      <b><li>Things accomplished</li></b>
+      <ul>
+        <li>Established communication with the Bluetooth controller + mobile app</li>
+        <li>Able to detect different frequencies using the microphone</li>
+        <li>Able to adjust the logic in order to turn the motor in specific directions</li>
+      </ul>
+    </ul>
+    <br><li>Created initial mobile companion interface</li>
+    <img src="images/tuning.png">
+    <img src="images/home.png">
+    <img src="images/help.png">
+    <img src="images/contact.png">
+  </ul>
+
+  <b>23 January 2019: </b>
+  <ul>
+    <li>The official Guitar Auto Tuner website is born!</li>
+    <ul>
+      <li>Hosted on the CSE domain of UNR.</li>
+      <li>Created different pages for the information neccessary</li>
+      <ul>
+        <li>Will be using placeholders for future additions (i.e. project video)</li>
+      </ul>
+    </ul>
+  </ul>
+
+  <b>29 January 2019: </b>
+  <ul>
+      <li>Second demo occured with Devrin at 10AM in the MIKC, some of the things mentioned are:</li>
+      <ul>
+        <li>Need to meet more frequently, keep working on progress</li>
+        <li>May need to upgrade the embedded system from an Arduino Uno to an Arduino Duo/Raspberry Pi</li>
+        <li>May need to consider upgrading the torque of the motor when turning the actual peg</li>
+        <li>Still need to clean up the accuracy of the frequency readings to match the frequencies being projected</li>
+        <li>Need to clean up the mobile app, create a more robust user interface</li>
+        <li>Need to create a single unit, hide the cabling</li>
+        <li>May need to create a request on Innovations Day for a quieter space (VR Area?), maybe include sound compression padding</li>
+      </ul>
+  </ul>
+
+  <b>8 February 2019: </b>
+  <ul>
+    <li>Identified potential risks...</li>
+    <ul>
+      <li>Design Risks:</li>
+      <ul>
+        <li>Microphone interruption [HIGH]</li>
+        <li>Lack of processing cores on Arduino Uno [MED-HIGH]</li>
+        <li>Microphone location [MED]</li>
+        <li>Containing parts in a single unit [MED-LOW]</li>
+        <li>Adequeate motor torque [LOW]</li>
+        <li>Bluetooth compatibility [LOW]</li>
+      </ul>
+      <li>Time Risks:</li>
+      <ul>
+        <li>Finishing main interface prior to next meeting [LOW]</li>
+      </ul>
+      <li>Budget Risks:</li>
+      <ul>
+        <li>Possible hardware swap of either embedded system OR microphone [MED-HIGH]</li>
+      </ul>
+    </ul>
+  </ul>
+
+  <b>22 February 2019:</b>
+  <ul>
+    <li>Reiterated on resources used, use cases, and functional/nonfunctional requirements</li>
+  </ul>
+
+  <b>8 March 2019:</b>
+  <ul>
+    <li>Changed Technology used for mobile application</li>
+    <ul>
+      <li>Xamarin-->Android Studio</li>
+      <ul>
+        <li>Lack of support for working with Bluetooth, one of our primary technologies</li>
+        <li>User interface much more polished compared to previous iteration: </li>
+      </ul>
+      <img src="images/app_menu.jpg" height=900 width=450>
+      <img src="images/app_home.jpg" height=900 width=450>
+      <img src="images/app_tuning.jpg" height=900 width=450>
+    </ul>
+    <li>Identified User Stories & Acceptance Criteria</li>
+    <ul>
+      <li><i><u>Mobile Application</u></i></li>
+      <ul>
+        <li>User Story 1: Easy app navigation</li>
+        <ul>
+          <li>Show necessary information in a concise format</li>
+          <li>Minimize amount of menus for user to navigate through</li>
+        </ul>
+        <li>User Story 2: Reliable Connectivity Between Device & Smartphone</li>
+        <ul>
+          <li>Have smartphone automatically connect once a connection has been established</li>
+          <li>Ensure stable connection throughout tuning process</li>
+        </ul>
+      </ul>
+      <li><i><u>Guitar Auto Tuner Device</u></i></li>
+      <ul>
+        <li>User Story 1: Easy Attachment</li>
+        <ul>
+          <li>Ensure motor fits snug to tuning peg</li>
+          <li>Minimize/eliminate any unneccesary exposed wires in the final product</li>
+        </ul>
+        <li>User Story 2: Damage Reduction</li>
+        <ul>
+          <li>Ensure proper motor torque, but not fast enough to break a string/damage the tuning knob</li>
+          <li>Implement a safety system that detects that the string is getting too tight based on a high frequency for the string being tuned</li>
+        </ul>
+      </ul>
+    </ul>
+    <li>Identified Happy & Unhappy Path Workflow</li>
+    <ul>
+      <li>Happy Path</li>
+      <ul>
+        <li>Proper use & tuning</li>
+        <li>Changing desired tuning</li>
+        <li>User feedback</li>
+      </ul>
+      <li>Unhappy Path</li>
+      <ul>
+        <li>Incorrect frequency readings</li>
+        <li>Prevent string damage</li>
+        <li>Unable to establish collection with smartphone</li>
+      </ul>
+    </ul>
+  </ul>
+
+  <b>13 March 2019:</b>
+  <ul>
+    <li>Presented our progress to Devrin Lee & Connor Scully-Allison</li>
+    <ul>
+      <li>Updated them on technology update</li>
+      <ul>
+        <li>Demonstrated latest iteration of the mobile app</li>
+      </ul>
+      <li>Demonstrated ability to send necessary information over Bluetooth from the phone to the device</li>
+      <li>Demonstrated that the motor's torque was sufficient enough to turn the tuning knob</li>
+    </ul>
+  </ul>
+
+  <b>4 April 2019:</b>
+  <ul>
+    <li>Presented our project to the rest of the class</li>
+    <ul>
+      <li>Showed off general functionality of the project itself</li>
+      <li>Showed off the hardware and technologies that we're using</li>
+      <li>Demonstrated connectivity from the device to the smartphone</li>
+    </ul>
+  </ul>
+
+  <b>19 April 2019:</b>
+  <ul>
+    <li>Changed general design of the device, decided to use the smartphone's microphone over the extra microphone we were originally using</li>
+    <ul>
+      <li>The frequency readings were inaccurate prior to this change. This was due to the microphone being used being of low quality.</li>
+      <li>We found the frequency readings from the microphone were <i>much</i> more precise compared to before.</li>
+      <li>Currently finishing up fine-tuning the logic necessary to turn the tuning peg before Innovations Day</li>
+      <ul>
+        <li>Not as <i>automatic</i> as we'd like it to be, as it still requires much more user input than necessary.</li>
+        <li>But the project is in a much better state than it was prior to presentation.</li>
+        <li>Of course, this leaves us plenty of room for future development in delivering a more polished final product.</li>
+      </ul>
+    </ul>
+  </ul>
+
+  <b>22 April 2019:</b>
+  <ul>
+    <li>After finishing up with the main functionality of the device itself, we decided not to solder the components together</li>
+    <ul>
+      <li>This was after assessing the amount of risk with our lack of soldering experience and the remaining time left before Innovations Day.</li>
+      <li>Didn't want to risk destroying our breadboard and wait for another shipment before Innovations Day.</li>
+    </ul>
+    <li>Began filming the video that will be displayed on our website.</li>
+    <ul>
+      <li>We plan on going over the device's functionality, how it works with the mobile app, and a demonstration with narration throughout of how it's supposed to work.</li>
+    </ul>
+  </ul>
+
+  <b>30 April 2019:</b>
+  <ul>
+    <li>Demonstrated our project to Devrin Lee & Connor Scully-Allison</li>
+    <ul>
+      <li>Discussed our change in design, updates to user interface & design on the mobile app, and received feedback about our project</li>
+      <ul>
+        <li>UI and design Updates were well received, didn't really have to worry about anything else prior to Innovations Day</li>
+      </ul>
+    </ul>
+  </ul>
+
+  <b>3 May 2019:</b>
+  <ul>
+    <li>Innovations Day has come...</li>
+    <ul>
+      <li>We plan on all being there throughout the time allotted to demonstrate our project.</li>
+      <li>Needless to say, we demonstrated the general functionality of the device itself with passerbys</li>
+      <ul>
+        <li>It was very well-received, the smaller room helped with noise enough to tune treble strings but not as reliably as desired for bass strings</li>
+        <li>Some visitors mentioned that the project was very cool and unique, and others pointed out some counterarguments for why they would want to use our device, their arguments were:</li>
+        <ul>
+          <li>Tuning by ear is something developed over time and some users may end up relying on the device</li>
+          <li>The device is still not as fast as tuning by hand</li>
+        </ul>
+        <li>All-in-all though, the project was a success!</li>
+        <li>Now we're just finalizing everything and uploading everything necessary for submission</li>
+      </ul>
+    </ul>
+  </ul>
+  </h4>
+
+  </body>
+</html>

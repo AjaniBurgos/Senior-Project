@@ -1,0 +1,62 @@
+body {
+  background-image: url("WebsiteBack.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Change the link color to #111 (black) on hover*/
+ul a{
+  list-style-type: none;
+  margin-top: 10;
+  padding: 0;
+  overflow: hidden;
+  background-color: #9fad9f;
+}
+
+li a{
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 60px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #4e6b4e;
+}
+
+.head ul{
+  list-style-type: none;
+  margin-top: 10;
+  padding: 0;
+  overflow: hidden;
+  background-color: #9fad9f;
+}
+
+.head li{
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 60px;
+  text-decoration: none;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+} */
+
+.strokeme
+{
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
